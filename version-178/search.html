@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>影片搜索-欧美高清影片</title>
+  <meta name="description" content="欧美高清影片搜索页面，支持按名称、地区、年份、类型和标签检索影片。">
+  <meta name="keywords" content="影片搜索,欧美高清影片,欧美影片,精选影片,影片合集,影片片库,免费在线观看,欧美电影">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body class="page-search">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="欧美高清影片">
+      <span class="brand-mark">欧</span>
+      <span class="brand-text">欧美高清影片</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link " href="./index.html">首页</a>
+<a class="nav-link " href="./categories.html">分类</a>
+<a class="nav-link " href="./ranking.html">排行</a>
+<a class="nav-link active" href="./search.html">搜索</a>
+    </nav>
+    <form class="global-search-form" action="./search.html" role="search">
+      <input name="q" type="search" placeholder="搜索影片、类型、年份" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="展开导航" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" hidden>
+    <nav aria-label="移动导航">
+      <a class="mobile-nav-link " href="./index.html">首页</a>
+<a class="mobile-nav-link " href="./categories.html">分类</a>
+<a class="mobile-nav-link " href="./ranking.html">排行</a>
+<a class="mobile-nav-link active" href="./search.html">搜索</a>
+    </nav>
+    <form class="global-search-form mobile-search" action="./search.html" role="search">
+      <input name="q" type="search" placeholder="搜索影片、类型、年份" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero compact-hero search-hero">
+    <div>
+      <p class="eyebrow">SEARCH</p>
+      <h1>影片搜索</h1>
+      <p>输入影片名称、地区、年份、类型或标签，快速定位想看的内容。</p>
+      <form class="search-page-form" role="search">
+        <input id="searchInput" name="q" type="search" placeholder="输入关键词" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="section-block">
+    <div class="search-tools">
+      <div class="filter-chip-row" id="searchCategoryChips">
+        <button type="button" class="is-active" data-search-category="all">全部</button>
+        <button type="button" data-search-category="europe">欧美精选</button><button type="button" data-search-category="movie">高清电影</button><button type="button" data-search-category="series">剧集连播</button><button type="button" data-search-category="romance">爱情剧情</button><button type="button" data-search-category="suspense">悬疑惊悚</button><button type="button" data-search-category="fantasy">奇幻冒险</button><button type="button" data-search-category="comedy">喜剧治愈</button><button type="button" data-search-category="action">动作犯罪</button><button type="button" data-search-category="family">家庭生活</button><button type="button" data-search-category="animation">动画音乐</button><button type="button" data-search-category="classic">经典年代</button><button type="button" data-search-category="global">全球片库</button>
+      </div>
+    </div>
+    <div id="searchResults" class="movie-grid search-results"></div>
+    <p id="searchEmpty" class="empty-state" hidden>没有找到匹配影片</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="footer-brand" href="./index.html">欧美高清影片</a>
+      <p>精选欧美影片合集片库，聚合高清电影、热播剧集与多类型内容入口。</p>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行</a>
+      <a href="./search.html">搜索</a>
+      <a href="./category-europe.html">欧美精选</a>
+<a href="./category-movie.html">高清电影</a>
+<a href="./category-series.html">剧集连播</a>
+<a href="./category-romance.html">爱情剧情</a>
+<a href="./category-suspense.html">悬疑惊悚</a>
+<a href="./category-fantasy.html">奇幻冒险</a>
+<a href="./category-comedy.html">喜剧治愈</a>
+<a href="./category-action.html">动作犯罪</a>
+    </div>
+  </div>
+</footer>
+<script src="./assets/app.js"></script>
+<script src="./assets/search-data.js"></script>
+<script>renderSearchPage();</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
